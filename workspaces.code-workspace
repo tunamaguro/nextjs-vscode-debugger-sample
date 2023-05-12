@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"name": "workspaces",
+			"path": "."
+		},
+		{
+			"name": "frontend",
+			"path": "./app"
+		}
+	],
+	"settings": {},
+	"extensions": {},
+}
