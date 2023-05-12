@@ -1,9 +1,21 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
-export default function Home() {
+async function getCreatedAt() {
+  const createdAt = new Date()
+  return new Promise<Date>((resolve) => {
+    setTimeout(() => {
+      resolve(createdAt)
+    }, 2000)
+  })
+}
+
+export default async function Home() {
+  const createdAt = await getCreatedAt()
+
   return (
     <main className={styles.main}>
+      <div>{createdAt.toISOString()}</div>
       <div className={styles.description}>
         <p>
           Get started by editing&nbsp;
