@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import { ClientCountUp } from './ClientCountUp'
 
 async function getCreatedAt() {
   const createdAt = new Date()
@@ -15,6 +16,7 @@ export default async function Home() {
 
   return (
     <main className={styles.main}>
+      <ClientCountUp />
       <div>{createdAt.toISOString()}</div>
       <div className={styles.description}>
         <p>
