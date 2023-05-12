@@ -1,0 +1,10 @@
+{
+    "name": "Next.js VSCode debugger sample",
+    "dockerComposeFile": [
+        "../compose.yaml",
+        "./compose.yaml"
+    ],
+    "service": "frontend",
+    "workspaceFolder": "/workspaces",
+    "remoteUser": "node"
+}
